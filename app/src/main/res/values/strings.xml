@@ -1,0 +1,48 @@
+<resources>
+    <string-array name="table_status_options">
+        <item>Available</item>
+        <item>Occupied</item>
+        <item>Reserved</item>
+    </string-array>
+
+    <string name="app_name">Manage Billiard</string>
+
+    <string name="home">Home</string>
+    <string name="share">Share</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+
+    <string name="open_nav">Open</string>
+    <string name="close_nav">Close</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="product_image">Hình ảnh sản phẩm</string>
+    <string name="app_description">Chào mừng bạn đến với ứng dụng Quản Lý Quán Billiard. Ứng dụng này sẽ giúp bạn quản lý bàn chơi, thời gian chơi, và tính tiền một cách nhanh chóng, hiệu quả. Bắt đầu trải nghiệm ngay!</string>
+    <string name="start_button">Bắt đầu</string>
+    <string name="logo_description">Logo của ứng dụng Quản Lý Quán Billiard</string>
+
+
+
+    <string-array name="months_array">
+        <item>Tháng ALL</item>
+        <item>Tháng 1</item>
+        <item>Tháng 2</item>
+        <item>Tháng 3</item>
+        <item>Tháng 4</item>
+        <item>Tháng 5</item>
+        <item>Tháng 6</item>
+        <item>Tháng 7</item>
+        <item>Tháng 8</item>
+        <item>Tháng 9</item>
+        <item>Tháng 10</item>
+        <item>Tháng 11</item>
+        <item>Tháng 12</item>
+    </string-array>
+
+    <string-array name="sap_xep_array">
+        <item>Cao tới thấp</item>
+        <item>Thấp tới cao</item>
+    </string-array>
+
+</resources>

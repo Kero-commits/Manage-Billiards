@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hinh_42"
+    tools:context=".View.Activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearInput"
+        android:layout_width="360dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/vang_nhat"
+        android:orientation="vertical"
+        android:padding="15dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="15sp"
+        android:background="@drawable/custom_edt"
+        android:drawableStart="@drawable/icon_sanpham"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Tên Sản Phẩm"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_edt"
+        android:drawableStart="@drawable/icon_soluong1"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Số Lượng"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProductName" />
+
+
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_edt"
+        android:drawableStart="@drawable/icon_tien"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Giá tiền"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextQuantity" />
+
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="157dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="Product Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+
+
+    <EditText
+        android:id="@+id/editTextImagePath"
+        android:layout_width="343dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:hint="Image URL or Path"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/custom_button"
+        android:text="Chọn Ảnh"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrice"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/custom_button_add"
+        android:text="SAVE"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectImage" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="119dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/custom_button_cancel"
+        android:text="Cancel"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSave"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

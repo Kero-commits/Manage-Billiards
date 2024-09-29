@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Màu khi nhấn -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFBB86FC"/> <!-- Màu khi nhấn -->
+            <corners android:bottomLeftRadius="35dp" android:topLeftRadius="35dp"
+                android:topRightRadius="35dp" android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+    <!-- Màu khi giữ -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF7D3C98"/> <!-- Màu khi giữ -->
+            <corners android:bottomLeftRadius="35dp" android:topLeftRadius="35dp"
+                android:topRightRadius="35dp" android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+    <!-- Màu mặc định -->
+    <item>
+        <shape android:shape="rectangle"> <stroke
+            android:width="3dp"
+            android:color="#A569BD"/>
+            <solid android:color="#48C9B0"/> <!-- Màu mặc định -->
+            <corners android:bottomLeftRadius="35dp" android:topLeftRadius="35dp" android:topRightRadius="0dp"  android:bottomRightRadius="35dp"/>
+        </shape>
+    </item>
+</selector>

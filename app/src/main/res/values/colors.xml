@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#272727</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E76160</color>
+    <color name="red_delete">#D98880</color>
+    <color name="grey">#ababab</color>
+    <color name="blue">#21618C</color>
+    <color name="teal_200">#21618C</color>
+    <color name="edit">#A3E4D7</color>
+    <color name="vang_nhat">#80FDEBD0</color>
+    <color name="xanh_nhat">#80D1F2EB</color>
+    <color name="tim">#F2D7D5</color>
+    <color name="colorPressed">#FFBB86FC</color>
+    <color name="colorDefault">#2874A6</color>
+    <color name="wecom">#A3E4D7</color>
+    <color name="tim_nhat">#77D98880</color>
+    <color name="back_den">#000000</color>
+
+    <color name="background_color">#F5F5F5</color> <!-- Màu nền nhạt -->
+    <color name="primary_text">#212121</color> <!-- Màu chữ chính -->
+    <color name="secondary_text">#757575</color> <!-- Màu chữ phụ -->
+    <color name="button_color">#3F51B5</color> <!-- Màu nền nút -->
+    <color name="colorFocused">#3F51B5</color> <!-- Màu khi tập trung -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="background_color_dark">#000000</color>
+
+</resources>

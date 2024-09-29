@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/vang_nhat"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/availableQuantityTextView"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/spinner_background2"
+        android:text="     Số lượng hiện có: 0"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="249dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/spinner_background2"
+        android:text="    Giá: 0"
+        android:textColor="@color/black"
+
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button_cancel"
+        android:hint="Nhập số lượng"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="246dp"
+        android:layout_height="28dp"
+        android:background="@drawable/custom_button_add"
+        android:text=" Tổng giá: 0"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="24dp"
+android:background="@color/vang_nhat"
+android:layout_gravity="center">
+
+<ImageView
+    android:id="@+id/imageViewIcon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="16dp"
+    android:contentDescription="@string/product_image"
+    android:src="@drawable/icon_delete" />
+
+<TextView
+    android:id="@+id/textViewMessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="16dp"
+    android:text="Bạn có chắc chắn muốn xóa khách hàng này?"
+    android:textColor="@android:color/black"
+    android:textSize="16sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="end">
+
+    <Button
+        android:id="@+id/btnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="?attr/selectableItemBackground"
+
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:text="Hủy"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:id="@+id/btnYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:drawableStart="@drawable/icon_delete"
+        android:drawablePadding="8dp"/>
+</LinearLayout>
+</LinearLayout>

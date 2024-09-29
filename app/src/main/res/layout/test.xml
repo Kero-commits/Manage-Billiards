@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="16dp"
+        android:text="Account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ban"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/account" />
+
+    <Button
+        android:id="@+id/khachhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khach Hang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ban" />
+
+    <Button
+        android:id="@+id/hoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoa Don"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/khachhang" />
+
+    <Button
+        android:id="@+id/thoigianchoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thoi Gian Choi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hoadon" />
+
+    <Button
+        android:id="@+id/chitiethoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi Tiet Hoa Don"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thoigianchoi" />
+
+    <ListView
+        android:id="@+id/listViewData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chitiethoadon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:dividerHeight="1dp"/>
+
+    <Button
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sản Phẩm"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="96dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

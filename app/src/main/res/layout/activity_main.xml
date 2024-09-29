@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hinh_20"
+    tools:context=".View.Activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-177dp"
+        tools:layout_editor_absoluteY="-38dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp">
+
+                <Button
+                    android:id="@+id/test_bang"
+                    android:layout_width="79dp"
+                    android:layout_height="33dp"
+                    android:text="test bảng"
+                    tools:layout_editor_absoluteX="364dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="221dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/banner"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="162dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="4dp"
+                        android:text="Wellcome \nManagerment"
+                        android:textColor="@color/wecom"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.164" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="190dp"
+                        android:layout_height="163dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/accountIdTextView"
+                        android:layout_width="108dp"
+                        android:layout_height="21dp"
+                        android:text="Account ID: "
+                        android:textColor="@color/wecom"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView5"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="226dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/white_background"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:text="Đăng Xuất"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+                    app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="399dp"
+                android:layout_marginTop="0dp">
+
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="330dp"
+                    android:layout_height="255dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Button Chuyển tiền -->
+                    <LinearLayout
+                        android:id="@+id/manageTablesLayout"
+                        android:layout_width="155dp"
+                        android:layout_height="108dp"
+                        android:layout_columnSpan="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/fun1_background"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/transfer_icon"
+                            android:layout_width="47dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_ban" />
+
+                        <TextView
+                            android:id="@+id/transfer_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="Bàn"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Button Dịch vụ thẻ -->
+                    <LinearLayout
+                        android:id="@+id/manageProductsLayout"
+                        android:layout_width="154dp"
+                        android:layout_height="108dp"
+                        android:layout_columnSpan="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/fun2_background"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/card_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="44dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_sanpham2" />
+
+                        <TextView
+                            android:id="@+id/card_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="Sản Phẩm"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Button Tiết kiệm -->
+                    <LinearLayout
+                        android:id="@+id/manageCustomersLayout"
+                        android:layout_width="156dp"
+                        android:layout_height="108dp"
+                        android:layout_columnSpan="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/fun3_background"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="manageTables"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <ImageView
+                            android:id="@+id/savings_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_khachhang" />
+
+                        <TextView
+                            android:id="@+id/savings_text"
+                            android:layout_width="124dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="Khách Hàng"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Button Mua sắm -->
+                    <LinearLayout
+                        android:id="@+id/manageInvoicesLayout"
+                        android:layout_width="154dp"
+                        android:layout_height="107dp"
+                        android:layout_columnSpan="1"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/fun4_background"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="manageTables"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/shopping_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_hoadon" />
+
+                        <TextView
+                            android:id="@+id/shopping_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:text="Hóa Đơn"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </GridLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnThongKe"
+                    android:layout_width="163dp"
+                    android:layout_height="106dp"
+                    android:layout_columnSpan="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/fun5_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="manageTables"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+                    app:layout_constraintStart_toStartOf="@+id/gridLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+                    <ImageView
+                        android:id="@+id/ImageThongKe"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_thongke" />
+
+                    <TextView
+                        android:id="@+id/TextThongKe"
+                        android:layout_width="92dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="Thống Kê"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
